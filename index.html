@@ -1,0 +1,117 @@
+<html>
+<title>Dropdown Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="1.css">
+
+<body>
+<div>
+<img src="BG.png" width="100%" height="40%">
+</div>
+<div class="w3-bar w3-orange ">
+ <button class="w3-bar-item w3-button" onclick="openKota('Home')">HOME</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Top')">JDM</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Bottom')">EROPA</button>
+ 	
+ <div class="w3-dropdown-hover">	
+	<button class="w3-button">LAINNYA</button>
+	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+	<button class="w3-bar-item w3-button" onclick="openKota('Left')">Indonesia</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Zoom')">Ferrari</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Fading')">Lamborghini</button>
+</div>
+</div>
+<button class="w3-bar-item w3-button" onclick="openKota('Right')">ABOUT</button>
+</div>
+
+<div id="Home" class="w3-container kota w3-center" style="display:block">
+<h2>Welcome</h2>
+<img src="car.jpg" width="40%">
+ 
+ 
+</div>
+
+<div id="Top" class="w3-container kota w3-animate-top" style="display:none">
+<center>
+ <h2>JDM</h2>
+ <img src="JDM.jpg" width="30%">
+ <p>Secara umum, istilah JDM berasal dari kata Japanese Domestic Market. Artinya, model mobil tertentu hanya dijual untuk pasar domestik Jepang dan tidak bakal ditemui di negara lain. Selain itu, 
+	ada pula orang yang menganggap bahwa JDM adalah model modifikasi mobil yang hanya ada di Negeri Sakura</p>
+</center>
+</div>
+
+<div id="Bottom" class="w3-container kota w3-animate-bottom" style="display:none">
+	<center>
+ <h2>MOBIL EROPA</h2>
+ <img src="eropa.jpg"width="30%">
+ <p>Di antara negara-negara Eropa, Portugal mengalami pertumbuhan paling signifikan untuk segmen SUV dan crossover hingga 50%, 
+	jauh di atas rata-rata pertumbuhan segmen SUV di Eropa tadi yang saya sebutkan, yakni 24%.
+	 Lalu, merek-merek yang paling mengalami kue manis di segmen tadi adalah Renault, Nissan, Volvo dan BMW,
+	  karena Renault Captur, Nissan Qashqai, Volvo XC60 dan BMW X5 menjadi raja di masing-masing segmen.
+	</p>
+</center>
+</div>
+
+<div id="Left" class="w3-container kota w3-animate-left" style="display:none">
+	<center>
+ <h2>Mobil Laris Di Indonesia</h2>
+ <img src="indo.jpg"width="30%">
+ <p>Mobil yang diproduksi di Indonesia tak hanya dijual di dalam negeri. Pabrikan otomotif yang punya pabrik di Indonesia juga
+	 mengekspor mobil-mobilnya ke berbagai negara di seluruh dunia. Menurut data Gabungan Industri Kendaraan Bermotor Indonesia (Gaikindo), ekspor Indonesia sepanjang 2018 tercatat sebanyak 264.553 unit. 
+	 Beberapa pabrikan mengekspor mobil buatan Indonesia dalam bentuk utuh (completely built-up, CBU). Tapi, ada juga yang mengekspor dalam bentuk terurai dan ekspor komponennya saja.
+	Setidaknya ada enam pabrikan yang aktif mengekspor kendaraannya dari Indonesia ke luar negeri. Di antaranya yakni Daihatsu, Toyota, Mitsubishi, Suzuki, Hyundai, dan Hino.</p>
+	</center>
+</div>
+
+
+<div id="Zoom" class="w3-container kota w3-animate-zoom" style="display:none">
+ <center>
+	<h2>FERRARI</h2>
+ <img src="feri.jpg"width="30%">
+ <p>Ferrari F430 adalah mobil super buatan Ferrari.F430 adalah penerus dari Ferrari 360 yang mengisi segment Ferrari termurah bermesin tengah belakang dalam jajaran produk Ferrari.
+	Produksi mulai pada tahun 2004 dan berakhir pada tahun 2009 dengan digantikannya dengan Ferrari 458 Italia.</p>
+</center>
+</div>
+
+
+
+<div id="Fading" class="w3-container kota w3-animate-fading" style="display:none">
+	<center>
+ <h2>Mobil Lambo</h2>
+ <img src="lambo.jpg"width="30%">
+ <p>Lamborghini Gallardo belum tentu bisa disebut mobil konvensional, terutama dengan mesin V10 yang ditempatkan di posisi tengah belakang dan dengan suara yang sangat ambigu.
+	Tapi, model yang kita lihat di artikel ini, dan yang ditampilkan di ajang SEMA Show, mungkin jauh lebih boros dari Lamborghini Gallardo biasanya.
+	Padahal, mesin V10 yang ada di Lamborghini Gallardo bisa dibilang salah satu mesin yang paling paling liar untuk kategori mobil produksi.</p>
+	</center>
+</div>
+
+<div id="Right" class="w3-container kota w3-animate-right" style="display:none">
+	<center>
+ <div class="wrapper">
+	<div class="section-header">
+		<h2> About Me </h2>
+	</div>
+	<div class="profile">
+		<img src="noval.JPG" width="50%,*">
+		<h3>Noval Kurnia Wicaksono</h3>
+		<h4>NIM : 10122115 (IF-3)</h3> 
+			<p>Universitas Komputer Indonesia</p>
+        
+	</div>
+	
+</div>
+</div>
+
+<script>
+	function openKota(namakota) {
+	 var i;
+ 	var x = document.getElementsByClassName("kota");
+ 	for (i = 0; i < x.length; i++) {
+ 	x[i].style.display = "none"; 
+ 	}
+	 document.getElementById(namakota).style.display = "block"; 
+	}
+
+</script>
+</body>
+</html>
